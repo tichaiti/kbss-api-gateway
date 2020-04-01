@@ -1,0 +1,7 @@
+FROM quay.io/solo-io/gateway:1.3.7
+WORKDIR /
+COPY ./data /data
+COPY start-gateway.sh start.sh
+RUN chmod +x start.sh
+ENTRYPOINT []
+CMD ./start.sh
